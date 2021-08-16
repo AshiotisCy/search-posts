@@ -1,38 +1,67 @@
 .App {
+  width: 100%;
+  height: 800px;
+  padding: 40px;
+}
+
+.user-Avatar {
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.selected-avatar{
+  border: 1px #1890ff solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-avatar {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.post-List {
+  height: inherit;
+  overflow: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.post {
+  margin-bottom: 20px !important;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected-post {
+  border: 1px #1890ff solid !important;
+}
+
+.reply-Btn {
+  padding-left: 0px !important;
+}
+
+.ant-comment-nested {
+  margin-left: 0px !important;
+}
+
+.Nested-Comments {
+  padding-left: 20px;
+}
+
+.ErrorMessage {
+  color: red;
+}
+
+.reply-body, .reply-tags, .reply-username {
+  margin-bottom: 10px;
+}
+
+.reply-username {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+}
+
+.invalid-border {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.comment-area .ant-input {
+  border-radius: 5px;
 }
